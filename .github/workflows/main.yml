@@ -23,7 +23,7 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync . s3://tws-prtfolio-deploy \
+          aws s3 sync . s3://tws-portfolio-deploy \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*"
